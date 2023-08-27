@@ -2,9 +2,9 @@
 const Replicate = require("replicate");
 const { translateOutput } = require("./translateService");
 
-require("dotenv").config();
-
 const HTTP_OK_STATUS = 200;
+
+require("dotenv").config();
 
 const postImage = async (req, res, _next) => {
   const {
