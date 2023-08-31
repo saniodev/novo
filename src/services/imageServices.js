@@ -8,7 +8,7 @@ require("dotenv").config();
 
 const postImage = async (req, res, _next) => {
   const {
-    imageUrl,
+    img,
     max_length,
     temperature,
     top_p,
@@ -29,7 +29,7 @@ const postImage = async (req, res, _next) => {
     {
       input: {
         prompt: "...",
-        img: imageUrl,
+        img: img,
         max_length: max_length,
         temperature: temperature,
         top_p: top_p,
